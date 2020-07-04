@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/constraint"
+    tools:context="com.yassinetaboubi.android.magazines.GameActivity">
+    <TextView
+        android:id="@+id/scoreballoon"
+        android:layout_width="76dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/balloong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/blue"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/balloonb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="83dp"
+        android:layout_height="62dp"
+        android:src="@drawable/balloonr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="164dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        app:layout_constraintBottom_toTopOf="@+id/startgame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/startgame"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/btnstyle2"
+        android:onClick="StarGame"
+        android:text="Start Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/quitgame"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="260dp"
+        android:text="Quit Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startgame"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@drawable/btnstyle2"/>
+
+</android.support.constraint.ConstraintLayout>

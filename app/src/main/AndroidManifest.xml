@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yassinetaboubi.android.magazines">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.yassinetaboubi.android.magazines.ColorActivity"></activity>
+        <activity android:name="com.yassinetaboubi.android.magazines.QuizActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.LeaderActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.VActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yassinetaboubi.android.magazines.MainActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.RegActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.BookActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.DrawingBookActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.MusicActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.AccountActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.ShortSotriesActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.DescriptionActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.GameActivity" />
+        <activity android:name="com.yassinetaboubi.android.magazines.AccountBookActivity" />
+    </application>
+
+</manifest>
