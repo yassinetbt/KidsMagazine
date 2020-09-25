@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import com.yassinetaboubi.android.magazines.R;
 
 public class ColorActivity extends AppCompatActivity {
-
+//git
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
